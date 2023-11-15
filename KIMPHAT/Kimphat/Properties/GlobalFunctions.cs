@@ -8,7 +8,12 @@ namespace Kimphat.Properties
 {
     public static class Database
     {
-        public static string Con = "server=173.176.2.62;port=40444;uid=kimphat;password=F%a9d3G?5;database=kp";
+        private static readonly string? IP = "173.176.2.62";
+        private static readonly string? Port = "40444";
+        private static readonly string? Uid = "kimphat";
+        private static readonly string? Pwd = "F%a9d3G?5";
+        private static readonly string? Db = "kp";
+        public static readonly string Con = "server=" + IP + ";port=" + Port + ";uid=" + Uid + ";password=" + Pwd + ";database=" + Db;
     }
     internal class Functions
     {
