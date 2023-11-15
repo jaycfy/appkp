@@ -157,7 +157,9 @@ namespace Kimphat.Main.User_Controls
                 "e_compagny AS COMPAGNIE, " +
                 "status AS STATUS " +
                 "FROM work " +
-                "WHERE id LIKE '%" + Search + "%'",
+                "WHERE " +
+                "id LIKE '%" + Search + "%' " +
+                "OR status LIKE '%" + Search + "%'",
                 con);
 
             try
