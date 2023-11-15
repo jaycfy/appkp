@@ -12,22 +12,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
-using Microsoft.Extensions.Configuration;
+using Kimphat.Properties;
 
 namespace Kimphat
 {
     public partial class UC_Main_Products : UserControl
     {
-        private readonly IConfiguration _configuration;
         public UC_Main_Products()
         {
             InitializeComponent();
-            _configuration = new ConfigurationBuilder().AddUserSecrets<UC_Main_Products>().Build();
         }
 
         private void UC_Main_Products_A_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
             MySqlCommand cmd = new(
                 "SELECT " +
                     "   items.attribut AS ATTRIBUT, " +
@@ -100,7 +98,7 @@ namespace Kimphat
         private void UC_Search_With_Filter()
         {
             string Search = TXT_Search.Text;
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
 
             if (CKB_UC_Products_See_Mine.Checked == true)
             {
@@ -198,7 +196,7 @@ namespace Kimphat
             {
                 if (TXT_Search.Text == null)
                 {
-                    MySqlConnection con = new(_configuration["DB:Con"]);
+                    MySqlConnection con = new(Database.Con);
                     MySqlCommand cmd = new(
                         "SELECT " +
                             "   items.attribut AS ATTRIBUT, " +
@@ -233,7 +231,7 @@ namespace Kimphat
                 else
                 {
                     string Search = TXT_Search.Text;
-                    MySqlConnection con = new(_configuration["DB:Con"]);
+                    MySqlConnection con = new(Database.Con);
                     MySqlCommand cmd = new(
                         "SELECT " +
                             "   items.attribut AS ATTRIBUT, " +
@@ -290,7 +288,7 @@ namespace Kimphat
             DGV_UC_Products.CurrentRow.Selected = true;
             string SelectedProduct = DGV_UC_Products.Rows[e.RowIndex].Cells["upc"].FormattedValue.ToString();
 
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
 
             try
             {

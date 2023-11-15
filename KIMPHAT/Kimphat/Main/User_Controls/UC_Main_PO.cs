@@ -8,22 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Extensions.Configuration;
+using Kimphat.Properties;
 
 namespace Kimphat.Main.User_Controls
 {
     public partial class UC_Main_PO : UserControl
     {
-        private readonly IConfiguration _configuration;
         public UC_Main_PO()
         {
             InitializeComponent();
-            _configuration = new ConfigurationBuilder().AddUserSecrets<UC_Main_PO>().Build();
         }
 
         private void UC_Main_PO_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
             MySqlCommand cmd = new(
                 "SELECT id AS ID, created_date AS DATE, e_compagny AS COMPAGNIE, status AS STATUS FROM work", con);
 
@@ -59,7 +57,7 @@ namespace Kimphat.Main.User_Controls
             DGV_UC_PO.CurrentRow.Selected = true;
             string SelectedBT = DGV_UC_PO.Rows[e.RowIndex].Cells["id"].FormattedValue.ToString();
 
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
 
             try
             {
@@ -148,7 +146,7 @@ namespace Kimphat.Main.User_Controls
         {
 
             string Search = TXT_Search.Text;
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
 
             MySqlCommand cmd = new(
                 "SELECT " +

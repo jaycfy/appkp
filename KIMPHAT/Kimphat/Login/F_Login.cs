@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Microsoft.Extensions.Configuration;
+using Kimphat.Properties;
 
 namespace Kimphat
 {
     public partial class F_Login : Form
     {
-        private readonly IConfiguration _configuration;
         private void Update_F_Login_Bar(string text, bool errorcode)
         {
             if (errorcode == false)
@@ -34,7 +33,6 @@ namespace Kimphat
         public F_Login()
         {
             InitializeComponent();
-            _configuration = new ConfigurationBuilder().AddUserSecrets<F_Login>().Build();
         }
 
         private void BTN_Login_Click(object sender, EventArgs e)
@@ -70,7 +68,7 @@ namespace Kimphat
             //---
             Update_F_Login_Bar("Connection à la base de données", false);
 
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
 
             try
             {
@@ -149,7 +147,7 @@ namespace Kimphat
 
         private void F_Login_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
             try
             {
                 con.Open();

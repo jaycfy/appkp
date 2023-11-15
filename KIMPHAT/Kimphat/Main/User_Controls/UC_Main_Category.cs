@@ -9,22 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Tls;
-using Microsoft.Extensions.Configuration;
+using Kimphat.Properties;
 
 namespace Kimphat
 {
     public partial class UC_Main_Category : UserControl
     {
-        private readonly IConfiguration _configuration;
         public UC_Main_Category() 
         {
             InitializeComponent();
-            _configuration = new ConfigurationBuilder().AddUserSecrets<UC_Main_Category>().Build();
         } 
 
         private void UC_Main_Category_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
             MySqlCommand cmd = new(
                 "SELECT * FROM categories", con);
 
@@ -52,7 +50,7 @@ namespace Kimphat
                                                        .Cells["id"].FormattedValue
                                                        .ToString();
 
-            MySqlConnection con = new(_configuration["DB:Con"]);
+            MySqlConnection con = new(Database.Con);
             
             try
             {
