@@ -43,7 +43,7 @@ namespace Kimphat.Main.User_Controls
 
         private void PCB_UC_PO_Edit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité 'AJOUTER' à venir", "Attention");
+            MessageBox.Show("Fonctionnalité 'ÉDITER' à venir", "Attention");
         }
 
         private void PCB_UC_PO_Add_Click(object sender, EventArgs e)
