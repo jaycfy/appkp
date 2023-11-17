@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Add_Work));
             PNL_UC_PO_BT = new Panel();
+            LBL_F_Add_Work_Billing_Address = new Label();
+            LBL_F_Add_Work_Work_Address = new Label();
             textBox10 = new TextBox();
             textBox9 = new TextBox();
             textBox8 = new TextBox();
@@ -40,8 +42,6 @@
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            label1 = new Label();
             CBB_F_Add_Work_Billing_Address = new ComboBox();
             CBB_F_Add_Work_Work_Address = new ComboBox();
             LBL_UC_PO_Created_By = new Label();
@@ -71,6 +71,8 @@
             panel2 = new Panel();
             LBL_F_Add_Work_Id = new Label();
             panel3 = new Panel();
+            dateTimePicker1 = new DateTimePicker();
+            label1 = new Label();
             BTN_F_Add_Work_Cancel = new Button();
             BTN_F_Add_Work_Save = new Button();
             PNL_UC_PO_BT.SuspendLayout();
@@ -82,6 +84,8 @@
             // PNL_UC_PO_BT
             // 
             PNL_UC_PO_BT.BorderStyle = BorderStyle.FixedSingle;
+            PNL_UC_PO_BT.Controls.Add(LBL_F_Add_Work_Billing_Address);
+            PNL_UC_PO_BT.Controls.Add(LBL_F_Add_Work_Work_Address);
             PNL_UC_PO_BT.Controls.Add(textBox10);
             PNL_UC_PO_BT.Controls.Add(textBox9);
             PNL_UC_PO_BT.Controls.Add(textBox8);
@@ -92,8 +96,6 @@
             PNL_UC_PO_BT.Controls.Add(textBox3);
             PNL_UC_PO_BT.Controls.Add(textBox2);
             PNL_UC_PO_BT.Controls.Add(textBox1);
-            PNL_UC_PO_BT.Controls.Add(dateTimePicker1);
-            PNL_UC_PO_BT.Controls.Add(label1);
             PNL_UC_PO_BT.Controls.Add(CBB_F_Add_Work_Billing_Address);
             PNL_UC_PO_BT.Controls.Add(CBB_F_Add_Work_Work_Address);
             PNL_UC_PO_BT.Controls.Add(LBL_UC_PO_Created_By);
@@ -121,9 +123,30 @@
             PNL_UC_PO_BT.Size = new Size(764, 989);
             PNL_UC_PO_BT.TabIndex = 7;
             // 
+            // LBL_F_Add_Work_Billing_Address
+            // 
+            LBL_F_Add_Work_Billing_Address.BackColor = Color.Transparent;
+            LBL_F_Add_Work_Billing_Address.Font = new Font("Gotham", 11.25F);
+            LBL_F_Add_Work_Billing_Address.ForeColor = Color.FromArgb(40, 40, 40);
+            LBL_F_Add_Work_Billing_Address.Location = new Point(383, 156);
+            LBL_F_Add_Work_Billing_Address.Name = "LBL_F_Add_Work_Billing_Address";
+            LBL_F_Add_Work_Billing_Address.Size = new Size(352, 70);
+            LBL_F_Add_Work_Billing_Address.TabIndex = 51;
+            // 
+            // LBL_F_Add_Work_Work_Address
+            // 
+            LBL_F_Add_Work_Work_Address.BackColor = Color.Transparent;
+            LBL_F_Add_Work_Work_Address.Font = new Font("Gotham", 11.25F);
+            LBL_F_Add_Work_Work_Address.ForeColor = Color.FromArgb(40, 40, 40);
+            LBL_F_Add_Work_Work_Address.Location = new Point(25, 156);
+            LBL_F_Add_Work_Work_Address.Name = "LBL_F_Add_Work_Work_Address";
+            LBL_F_Add_Work_Work_Address.Size = new Size(352, 70);
+            LBL_F_Add_Work_Work_Address.TabIndex = 50;
+            // 
             // textBox10
             // 
             textBox10.Font = new Font("Gotham", 12F);
+            textBox10.ForeColor = Color.FromArgb(40, 40, 40);
             textBox10.Location = new Point(182, 942);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(555, 24);
@@ -132,6 +155,7 @@
             // textBox9
             // 
             textBox9.Font = new Font("Gotham", 12F);
+            textBox9.ForeColor = Color.FromArgb(40, 40, 40);
             textBox9.Location = new Point(233, 639);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(504, 24);
@@ -140,6 +164,7 @@
             // textBox8
             // 
             textBox8.Font = new Font("Gotham", 12F);
+            textBox8.ForeColor = Color.FromArgb(40, 40, 40);
             textBox8.Location = new Point(233, 616);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(504, 24);
@@ -148,6 +173,7 @@
             // textBox7
             // 
             textBox7.Font = new Font("Gotham", 12F);
+            textBox7.ForeColor = Color.FromArgb(40, 40, 40);
             textBox7.Location = new Point(233, 385);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(504, 24);
@@ -156,6 +182,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Gotham", 12F);
+            textBox6.ForeColor = Color.FromArgb(40, 40, 40);
             textBox6.Location = new Point(233, 362);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(504, 24);
@@ -164,6 +191,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Gotham", 12F);
+            textBox5.ForeColor = Color.FromArgb(40, 40, 40);
             textBox5.Location = new Point(233, 339);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(504, 24);
@@ -172,6 +200,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Gotham", 12F);
+            textBox4.ForeColor = Color.FromArgb(40, 40, 40);
             textBox4.Location = new Point(233, 316);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(504, 24);
@@ -180,6 +209,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Gotham", 12F);
+            textBox3.ForeColor = Color.FromArgb(40, 40, 40);
             textBox3.Location = new Point(233, 272);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(504, 24);
@@ -188,6 +218,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Gotham", 12F);
+            textBox2.ForeColor = Color.FromArgb(40, 40, 40);
             textBox2.Location = new Point(233, 249);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(504, 24);
@@ -196,50 +227,35 @@
             // textBox1
             // 
             textBox1.Font = new Font("Gotham", 12F);
+            textBox1.ForeColor = Color.FromArgb(40, 40, 40);
             textBox1.Location = new Point(233, 226);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(504, 24);
             textBox1.TabIndex = 5;
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(26, 127);
-            dateTimePicker1.MinDate = new DateTime(2001, 1, 1, 0, 0, 0, 0);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 24);
-            dateTimePicker1.TabIndex = 2;
-            dateTimePicker1.Value = new DateTime(2023, 11, 17, 0, 0, 0, 0);
-            // 
-            // label1
-            // 
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(40, 40, 40);
-            label1.Location = new Point(26, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(352, 36);
-            label1.TabIndex = 52;
-            label1.Text = "Date de la demande :";
-            label1.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // CBB_F_Add_Work_Billing_Address
             // 
+            CBB_F_Add_Work_Billing_Address.BackColor = Color.White;
             CBB_F_Add_Work_Billing_Address.Font = new Font("Gotham", 12F);
+            CBB_F_Add_Work_Billing_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Billing_Address.FormattingEnabled = true;
-            CBB_F_Add_Work_Billing_Address.Location = new Point(385, 189);
+            CBB_F_Add_Work_Billing_Address.Location = new Point(383, 127);
             CBB_F_Add_Work_Billing_Address.Name = "CBB_F_Add_Work_Billing_Address";
             CBB_F_Add_Work_Billing_Address.Size = new Size(352, 26);
             CBB_F_Add_Work_Billing_Address.TabIndex = 4;
+            CBB_F_Add_Work_Billing_Address.SelectedIndexChanged += CBB_F_Add_Work_Billing_Address_SelectedIndexChanged;
             // 
             // CBB_F_Add_Work_Work_Address
             // 
+            CBB_F_Add_Work_Work_Address.BackColor = Color.White;
             CBB_F_Add_Work_Work_Address.Font = new Font("Gotham", 12F);
+            CBB_F_Add_Work_Work_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Work_Address.FormattingEnabled = true;
-            CBB_F_Add_Work_Work_Address.Location = new Point(26, 189);
+            CBB_F_Add_Work_Work_Address.Location = new Point(25, 127);
             CBB_F_Add_Work_Work_Address.Name = "CBB_F_Add_Work_Work_Address";
             CBB_F_Add_Work_Work_Address.Size = new Size(352, 26);
             CBB_F_Add_Work_Work_Address.TabIndex = 3;
+            CBB_F_Add_Work_Work_Address.SelectedIndexChanged += CBB_F_Add_Work_Work_Address_SelectedIndexChanged;
             // 
             // LBL_UC_PO_Created_By
             // 
@@ -318,6 +334,7 @@
             TXT_UC_PO_Follow_Up.Cursor = Cursors.IBeam;
             TXT_UC_PO_Follow_Up.Dock = DockStyle.Fill;
             TXT_UC_PO_Follow_Up.Font = new Font("Gotham", 11.25F);
+            TXT_UC_PO_Follow_Up.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_UC_PO_Follow_Up.Location = new Point(0, 23);
             TXT_UC_PO_Follow_Up.Multiline = true;
             TXT_UC_PO_Follow_Up.Name = "TXT_UC_PO_Follow_Up";
@@ -355,6 +372,7 @@
             TXT_UC_PO_Work.Cursor = Cursors.IBeam;
             TXT_UC_PO_Work.Dock = DockStyle.Fill;
             TXT_UC_PO_Work.Font = new Font("Gotham", 11.25F);
+            TXT_UC_PO_Work.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_UC_PO_Work.Location = new Point(0, 23);
             TXT_UC_PO_Work.Multiline = true;
             TXT_UC_PO_Work.Name = "TXT_UC_PO_Work";
@@ -479,7 +497,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(40, 40, 40);
-            label3.Location = new Point(384, 154);
+            label3.Location = new Point(383, 88);
             label3.Name = "label3";
             label3.Size = new Size(352, 36);
             label3.TabIndex = 15;
@@ -491,7 +509,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(40, 40, 40);
-            label5.Location = new Point(26, 154);
+            label5.Location = new Point(25, 88);
             label5.Name = "label5";
             label5.Size = new Size(352, 36);
             label5.TabIndex = 14;
@@ -561,6 +579,28 @@
             panel3.Size = new Size(762, 4);
             panel3.TabIndex = 4;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Location = new Point(190, 998);
+            dateTimePicker1.MinDate = new DateTime(2001, 1, 1, 0, 0, 0, 0);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 24);
+            dateTimePicker1.TabIndex = 2;
+            dateTimePicker1.Value = new DateTime(2023, 11, 17, 0, 0, 0, 0);
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(40, 40, 40);
+            label1.Location = new Point(0, 992);
+            label1.Name = "label1";
+            label1.Size = new Size(188, 36);
+            label1.TabIndex = 52;
+            label1.Text = "Date de la demande :";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // BTN_F_Add_Work_Cancel
             // 
             BTN_F_Add_Work_Cancel.Font = new Font("Gotham", 11.25F);
@@ -581,6 +621,7 @@
             BTN_F_Add_Work_Save.TabIndex = 17;
             BTN_F_Add_Work_Save.Text = "Enregistrer";
             BTN_F_Add_Work_Save.UseVisualStyleBackColor = true;
+            BTN_F_Add_Work_Save.Click += BTN_F_Add_Work_Save_Click;
             // 
             // F_Add_Work
             // 
@@ -592,6 +633,8 @@
             Controls.Add(BTN_F_Add_Work_Save);
             Controls.Add(BTN_F_Add_Work_Cancel);
             Controls.Add(PNL_UC_PO_BT);
+            Controls.Add(label1);
+            Controls.Add(dateTimePicker1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -655,5 +698,7 @@
         private TextBox textBox9;
         private TextBox textBox8;
         private Label LBL_UC_PO_Created_By;
+        private Label LBL_F_Add_Work_Billing_Address;
+        private Label LBL_F_Add_Work_Work_Address;
     }
 }

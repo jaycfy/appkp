@@ -302,6 +302,7 @@
             TXT_UC_PO_Follow_Up.Cursor = Cursors.IBeam;
             TXT_UC_PO_Follow_Up.Dock = DockStyle.Fill;
             TXT_UC_PO_Follow_Up.Font = new Font("Gotham", 11.25F);
+            TXT_UC_PO_Follow_Up.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_UC_PO_Follow_Up.Location = new Point(0, 23);
             TXT_UC_PO_Follow_Up.Multiline = true;
             TXT_UC_PO_Follow_Up.Name = "TXT_UC_PO_Follow_Up";
@@ -339,6 +340,7 @@
             TXT_UC_PO_Work.Cursor = Cursors.IBeam;
             TXT_UC_PO_Work.Dock = DockStyle.Fill;
             TXT_UC_PO_Work.Font = new Font("Gotham", 11.25F);
+            TXT_UC_PO_Work.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_UC_PO_Work.Location = new Point(0, 23);
             TXT_UC_PO_Work.Multiline = true;
             TXT_UC_PO_Work.Name = "TXT_UC_PO_Work";

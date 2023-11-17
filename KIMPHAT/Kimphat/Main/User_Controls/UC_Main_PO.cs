@@ -48,8 +48,6 @@ namespace Kimphat.Main.User_Controls
 
         private void PCB_UC_PO_Add_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Fonctionnalité 'ÉDITER' à venir", "Attention");
-
             MySqlConnection con = new(Database.Con);
             try
             {
