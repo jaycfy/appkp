@@ -36,7 +36,7 @@ namespace Kimphat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
             }
             con.Close();
         }
@@ -81,7 +81,7 @@ namespace Kimphat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
             }
             con.Close();
         }

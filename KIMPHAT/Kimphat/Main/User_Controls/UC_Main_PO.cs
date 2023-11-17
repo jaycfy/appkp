@@ -35,7 +35,7 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
             }
             con.Close();
         }
@@ -138,7 +138,7 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
             }
         }
 
@@ -170,9 +170,14 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur : " + Environment.NewLine + ex.Message);
             }
             con.Close();
+        }
+
+        private void PCB_UC_PO_Print_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Fonctionnalité 'IMPRIMER' à venir");
         }
     }
 }

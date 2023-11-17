@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             label1 = new Label();
             DGV_UC_PO = new DataGridView();
             PNL_UC_PO_BT = new Panel();
@@ -79,6 +79,7 @@
             pictureBox2 = new PictureBox();
             PCB_UC_PO_Add = new PictureBox();
             PCB_UC_PO_Edit = new PictureBox();
+            PCB_UC_PO_Print = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)DGV_UC_PO).BeginInit();
             PNL_UC_PO_BT.SuspendLayout();
             panel7.SuspendLayout();
@@ -88,11 +89,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Add).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Edit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Print).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Font = new Font("Gotham", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Gotham", 15.75F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(227, 15, 44);
             label1.Location = new Point(23, 25);
             label1.Name = "label1";
@@ -112,39 +114,38 @@
             DGV_UC_PO.BorderStyle = BorderStyle.None;
             DGV_UC_PO.CellBorderStyle = DataGridViewCellBorderStyle.None;
             DGV_UC_PO.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(40, 40, 40);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            DGV_UC_PO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.White;
+            dataGridViewCellStyle7.Font = new Font("Gotham", 12F);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(40, 40, 40);
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            DGV_UC_PO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             DGV_UC_PO.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(40, 40, 40);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            DGV_UC_PO.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.White;
+            dataGridViewCellStyle8.Font = new Font("Gotham", 12F);
+            dataGridViewCellStyle8.ForeColor = Color.FromArgb(40, 40, 40);
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            DGV_UC_PO.DefaultCellStyle = dataGridViewCellStyle8;
             DGV_UC_PO.GridColor = Color.White;
             DGV_UC_PO.Location = new Point(23, 65);
             DGV_UC_PO.MultiSelect = false;
             DGV_UC_PO.Name = "DGV_UC_PO";
             DGV_UC_PO.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Gotham", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            DGV_UC_PO.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.White;
+            dataGridViewCellStyle9.Font = new Font("Gotham", 9.749999F);
+            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            DGV_UC_PO.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             DGV_UC_PO.RowHeadersVisible = false;
             DGV_UC_PO.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            DGV_UC_PO.RowTemplate.Height = 25;
             DGV_UC_PO.RowTemplate.ReadOnly = true;
             DGV_UC_PO.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DGV_UC_PO.Size = new Size(721, 913);
@@ -195,7 +196,7 @@
             // LBL_UC_PO_Created_By
             // 
             LBL_UC_PO_Created_By.BackColor = Color.Transparent;
-            LBL_UC_PO_Created_By.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Created_By.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Created_By.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Created_By.Location = new Point(182, 901);
             LBL_UC_PO_Created_By.Name = "LBL_UC_PO_Created_By";
@@ -206,7 +207,7 @@
             // LBL_UC_PO_Approved_By
             // 
             LBL_UC_PO_Approved_By.BackColor = Color.Transparent;
-            LBL_UC_PO_Approved_By.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Approved_By.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Approved_By.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Approved_By.Location = new Point(182, 936);
             LBL_UC_PO_Approved_By.Name = "LBL_UC_PO_Approved_By";
@@ -217,7 +218,7 @@
             // label27
             // 
             label27.BackColor = Color.Transparent;
-            label27.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label27.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label27.ForeColor = Color.FromArgb(40, 40, 40);
             label27.Location = new Point(26, 936);
             label27.Name = "label27";
@@ -229,7 +230,7 @@
             // label28
             // 
             label28.BackColor = Color.Transparent;
-            label28.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label28.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label28.ForeColor = Color.FromArgb(40, 40, 40);
             label28.Location = new Point(26, 901);
             label28.Name = "label28";
@@ -241,7 +242,7 @@
             // LBL_UC_PO_Additional
             // 
             LBL_UC_PO_Additional.BackColor = Color.Transparent;
-            LBL_UC_PO_Additional.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Additional.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Additional.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Additional.Location = new Point(232, 639);
             LBL_UC_PO_Additional.Name = "LBL_UC_PO_Additional";
@@ -252,7 +253,7 @@
             // LBL_UC_PO_Submission
             // 
             LBL_UC_PO_Submission.BackColor = Color.Transparent;
-            LBL_UC_PO_Submission.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Submission.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Submission.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Submission.Location = new Point(232, 616);
             LBL_UC_PO_Submission.Name = "LBL_UC_PO_Submission";
@@ -263,7 +264,7 @@
             // label25
             // 
             label25.BackColor = Color.Transparent;
-            label25.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label25.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label25.ForeColor = Color.FromArgb(40, 40, 40);
             label25.Location = new Point(26, 639);
             label25.Name = "label25";
@@ -275,7 +276,7 @@
             // label26
             // 
             label26.BackColor = Color.Transparent;
-            label26.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label26.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label26.ForeColor = Color.FromArgb(40, 40, 40);
             label26.Location = new Point(26, 616);
             label26.Name = "label26";
@@ -300,7 +301,7 @@
             TXT_UC_PO_Follow_Up.BorderStyle = BorderStyle.None;
             TXT_UC_PO_Follow_Up.Cursor = Cursors.IBeam;
             TXT_UC_PO_Follow_Up.Dock = DockStyle.Fill;
-            TXT_UC_PO_Follow_Up.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            TXT_UC_PO_Follow_Up.Font = new Font("Gotham", 11.25F);
             TXT_UC_PO_Follow_Up.Location = new Point(0, 23);
             TXT_UC_PO_Follow_Up.Multiline = true;
             TXT_UC_PO_Follow_Up.Name = "TXT_UC_PO_Follow_Up";
@@ -312,7 +313,7 @@
             // 
             label24.BackColor = Color.FromArgb(50, 50, 50);
             label24.Dock = DockStyle.Top;
-            label24.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label24.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label24.ForeColor = Color.White;
             label24.Location = new Point(0, 0);
             label24.Name = "label24";
@@ -337,7 +338,7 @@
             TXT_UC_PO_Work.BorderStyle = BorderStyle.None;
             TXT_UC_PO_Work.Cursor = Cursors.IBeam;
             TXT_UC_PO_Work.Dock = DockStyle.Fill;
-            TXT_UC_PO_Work.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            TXT_UC_PO_Work.Font = new Font("Gotham", 11.25F);
             TXT_UC_PO_Work.Location = new Point(0, 23);
             TXT_UC_PO_Work.Multiline = true;
             TXT_UC_PO_Work.Name = "TXT_UC_PO_Work";
@@ -349,7 +350,7 @@
             // 
             label21.BackColor = Color.FromArgb(50, 50, 50);
             label21.Dock = DockStyle.Top;
-            label21.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label21.ForeColor = Color.White;
             label21.Location = new Point(0, 0);
             label21.Name = "label21";
@@ -361,7 +362,7 @@
             // LBL_UC_PO_E_Email
             // 
             LBL_UC_PO_E_Email.BackColor = Color.Transparent;
-            LBL_UC_PO_E_Email.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_E_Email.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_E_Email.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_E_Email.Location = new Point(232, 385);
             LBL_UC_PO_E_Email.Name = "LBL_UC_PO_E_Email";
@@ -372,7 +373,7 @@
             // LBL_UC_PO_E_Number
             // 
             LBL_UC_PO_E_Number.BackColor = Color.Transparent;
-            LBL_UC_PO_E_Number.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_E_Number.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_E_Number.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_E_Number.Location = new Point(232, 362);
             LBL_UC_PO_E_Number.Name = "LBL_UC_PO_E_Number";
@@ -383,7 +384,7 @@
             // LBL_UC_PO_E_Contact
             // 
             LBL_UC_PO_E_Contact.BackColor = Color.Transparent;
-            LBL_UC_PO_E_Contact.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_E_Contact.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_E_Contact.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_E_Contact.Location = new Point(232, 339);
             LBL_UC_PO_E_Contact.Name = "LBL_UC_PO_E_Contact";
@@ -394,7 +395,7 @@
             // LBL_UC_PO_E_Compagny
             // 
             LBL_UC_PO_E_Compagny.BackColor = Color.Transparent;
-            LBL_UC_PO_E_Compagny.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_E_Compagny.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_E_Compagny.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_E_Compagny.Location = new Point(232, 316);
             LBL_UC_PO_E_Compagny.Name = "LBL_UC_PO_E_Compagny";
@@ -405,7 +406,7 @@
             // LBL_UC_PO_S_Email
             // 
             LBL_UC_PO_S_Email.BackColor = Color.Transparent;
-            LBL_UC_PO_S_Email.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_S_Email.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_S_Email.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_S_Email.Location = new Point(232, 272);
             LBL_UC_PO_S_Email.Name = "LBL_UC_PO_S_Email";
@@ -416,7 +417,7 @@
             // LBL_UC_PO_S_Number
             // 
             LBL_UC_PO_S_Number.BackColor = Color.Transparent;
-            LBL_UC_PO_S_Number.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_S_Number.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_S_Number.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_S_Number.Location = new Point(232, 249);
             LBL_UC_PO_S_Number.Name = "LBL_UC_PO_S_Number";
@@ -427,7 +428,7 @@
             // label20
             // 
             label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label20.ForeColor = Color.FromArgb(40, 40, 40);
             label20.Location = new Point(26, 316);
             label20.Name = "label20";
@@ -439,7 +440,7 @@
             // label16
             // 
             label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label16.ForeColor = Color.FromArgb(40, 40, 40);
             label16.Location = new Point(26, 385);
             label16.Name = "label16";
@@ -451,7 +452,7 @@
             // label17
             // 
             label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label17.ForeColor = Color.FromArgb(40, 40, 40);
             label17.Location = new Point(26, 362);
             label17.Name = "label17";
@@ -463,7 +464,7 @@
             // label18
             // 
             label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label18.ForeColor = Color.FromArgb(40, 40, 40);
             label18.Location = new Point(26, 339);
             label18.Name = "label18";
@@ -475,7 +476,7 @@
             // LBL_UC_PO_S_Contact
             // 
             LBL_UC_PO_S_Contact.BackColor = Color.Transparent;
-            LBL_UC_PO_S_Contact.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_S_Contact.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_S_Contact.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_S_Contact.Location = new Point(232, 226);
             LBL_UC_PO_S_Contact.Name = "LBL_UC_PO_S_Contact";
@@ -486,7 +487,7 @@
             // label9
             // 
             label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label9.ForeColor = Color.FromArgb(40, 40, 40);
             label9.Location = new Point(26, 272);
             label9.Name = "label9";
@@ -498,7 +499,7 @@
             // label8
             // 
             label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label8.ForeColor = Color.FromArgb(40, 40, 40);
             label8.Location = new Point(26, 249);
             label8.Name = "label8";
@@ -510,7 +511,7 @@
             // label7
             // 
             label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label7.ForeColor = Color.FromArgb(40, 40, 40);
             label7.Location = new Point(26, 226);
             label7.Name = "label7";
@@ -522,7 +523,7 @@
             // LBL_UC_PO_Billing_Address
             // 
             LBL_UC_PO_Billing_Address.BackColor = Color.Transparent;
-            LBL_UC_PO_Billing_Address.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Billing_Address.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Billing_Address.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Billing_Address.Location = new Point(384, 126);
             LBL_UC_PO_Billing_Address.Name = "LBL_UC_PO_Billing_Address";
@@ -533,7 +534,7 @@
             // LBL_UC_PO_Work_Address
             // 
             LBL_UC_PO_Work_Address.BackColor = Color.Transparent;
-            LBL_UC_PO_Work_Address.Font = new Font("Gotham", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Work_Address.Font = new Font("Gotham", 11.25F);
             LBL_UC_PO_Work_Address.ForeColor = Color.FromArgb(40, 40, 40);
             LBL_UC_PO_Work_Address.Location = new Point(26, 126);
             LBL_UC_PO_Work_Address.Name = "LBL_UC_PO_Work_Address";
@@ -560,7 +561,7 @@
             // label3
             // 
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(40, 40, 40);
             label3.Location = new Point(384, 90);
             label3.Name = "label3";
@@ -572,7 +573,7 @@
             // label5
             // 
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(40, 40, 40);
             label5.Location = new Point(26, 90);
             label5.Name = "label5";
@@ -600,7 +601,7 @@
             // 
             LBL_UC_PO_Request_Date.BackColor = Color.Transparent;
             LBL_UC_PO_Request_Date.Dock = DockStyle.Bottom;
-            LBL_UC_PO_Request_Date.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_UC_PO_Request_Date.Font = new Font("Gotham", 12F);
             LBL_UC_PO_Request_Date.ForeColor = Color.White;
             LBL_UC_PO_Request_Date.ImageAlign = ContentAlignment.TopCenter;
             LBL_UC_PO_Request_Date.Location = new Point(176, 49);
@@ -614,7 +615,7 @@
             // 
             label2.BackColor = Color.Transparent;
             label2.Dock = DockStyle.Top;
-            label2.Font = new Font("Gotham", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Gotham", 15.75F, FontStyle.Bold);
             label2.ForeColor = Color.White;
             label2.ImageAlign = ContentAlignment.BottomLeft;
             label2.Location = new Point(176, 0);
@@ -639,7 +640,7 @@
             // LBL_UC_PO_Id
             // 
             LBL_UC_PO_Id.Dock = DockStyle.Right;
-            LBL_UC_PO_Id.Font = new Font("Gotham", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            LBL_UC_PO_Id.Font = new Font("Gotham", 15.75F, FontStyle.Bold);
             LBL_UC_PO_Id.ForeColor = Color.White;
             LBL_UC_PO_Id.Location = new Point(586, 0);
             LBL_UC_PO_Id.Name = "LBL_UC_PO_Id";
@@ -673,7 +674,7 @@
             // 
             TXT_Search.BackColor = Color.White;
             TXT_Search.Cursor = Cursors.IBeam;
-            TXT_Search.Font = new Font("Gotham", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            TXT_Search.Font = new Font("Gotham", 13F);
             TXT_Search.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_Search.Location = new Point(432, 32);
             TXT_Search.Name = "TXT_Search";
@@ -694,8 +695,8 @@
             // PCB_UC_PO_Add
             // 
             PCB_UC_PO_Add.Cursor = Cursors.Hand;
-            PCB_UC_PO_Add.Image = Properties.Resources.arrow;
-            PCB_UC_PO_Add.Location = new Point(714, 984);
+            PCB_UC_PO_Add.Image = Properties.Resources.Edit;
+            PCB_UC_PO_Add.Location = new Point(678, 983);
             PCB_UC_PO_Add.Name = "PCB_UC_PO_Add";
             PCB_UC_PO_Add.Size = new Size(30, 30);
             PCB_UC_PO_Add.SizeMode = PictureBoxSizeMode.Zoom;
@@ -706,8 +707,8 @@
             // PCB_UC_PO_Edit
             // 
             PCB_UC_PO_Edit.Cursor = Cursors.Hand;
-            PCB_UC_PO_Edit.Image = Properties.Resources.arrow;
-            PCB_UC_PO_Edit.Location = new Point(678, 984);
+            PCB_UC_PO_Edit.Image = Properties.Resources.Add1;
+            PCB_UC_PO_Edit.Location = new Point(642, 983);
             PCB_UC_PO_Edit.Name = "PCB_UC_PO_Edit";
             PCB_UC_PO_Edit.Size = new Size(30, 30);
             PCB_UC_PO_Edit.SizeMode = PictureBoxSizeMode.Zoom;
@@ -715,11 +716,24 @@
             PCB_UC_PO_Edit.TabStop = false;
             PCB_UC_PO_Edit.Click += PCB_UC_PO_Edit_Click;
             // 
+            // PCB_UC_PO_Print
+            // 
+            PCB_UC_PO_Print.Cursor = Cursors.Hand;
+            PCB_UC_PO_Print.Image = Properties.Resources.Print3;
+            PCB_UC_PO_Print.Location = new Point(714, 983);
+            PCB_UC_PO_Print.Name = "PCB_UC_PO_Print";
+            PCB_UC_PO_Print.Size = new Size(30, 30);
+            PCB_UC_PO_Print.SizeMode = PictureBoxSizeMode.Zoom;
+            PCB_UC_PO_Print.TabIndex = 13;
+            PCB_UC_PO_Print.TabStop = false;
+            PCB_UC_PO_Print.Click += PCB_UC_PO_Print_Click;
+            // 
             // UC_Main_PO
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(PCB_UC_PO_Print);
             Controls.Add(PCB_UC_PO_Edit);
             Controls.Add(PCB_UC_PO_Add);
             Controls.Add(pictureBox2);
@@ -742,6 +756,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Add).EndInit();
             ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Edit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PCB_UC_PO_Print).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -796,5 +811,6 @@
         private Label label28;
         private Label LBL_UC_PO_Created_By;
         private Label LBL_UC_PO_Approved_By;
+        private PictureBox PCB_UC_PO_Print;
     }
 }

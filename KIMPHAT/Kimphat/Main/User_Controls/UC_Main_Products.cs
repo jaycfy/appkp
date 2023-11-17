@@ -53,7 +53,7 @@ namespace Kimphat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
             }
             con.Close();
         }
@@ -86,7 +86,7 @@ namespace Kimphat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors du chargement de l'image : " + ex.Message);
+                MessageBox.Show("Erreur lors du chargement de l'image :" + Environment.NewLine + ex.Message);
             }
         }
 
@@ -140,7 +140,7 @@ namespace Kimphat
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erreur : " + ex.Message);
+                    MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
                 }
                 con.Close();
             }
@@ -184,7 +184,7 @@ namespace Kimphat
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erreur : " + ex.Message);
+                    MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
                 }
                 con.Close();
             }
@@ -224,7 +224,7 @@ namespace Kimphat
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Erreur : " + ex.Message);
+                        MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
                     }
                     con.Close();
                 }
@@ -270,7 +270,7 @@ namespace Kimphat
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Erreur : " + ex.Message);
+                        MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
                     }
                     con.Close();
                 }
@@ -392,7 +392,7 @@ namespace Kimphat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de l'affichage du produit sélectionné : " + ex.Message);
+                MessageBox.Show("Erreur lors de l'affichage du produit sélectionné :" + Environment.NewLine + ex.Message);
             }
         }
     }

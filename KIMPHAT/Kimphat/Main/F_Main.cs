@@ -8,17 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Extensions.Configuration;
 
 namespace Kimphat
 {
     public partial class F_Main : Form
     {
-        private readonly IConfiguration _configuration;
         public F_Main()
         {
             InitializeComponent();
-            _configuration = new ConfigurationBuilder().AddUserSecrets<F_Main>().Build();
         }
 
         private void LBL_F_Main_Quit_Click(object sender, EventArgs e)
@@ -78,7 +75,7 @@ namespace Kimphat
         {
             if (User.UserLevel != "4")
             {
-                MessageBox.Show("Erreur : Connectez-vous avec des autorisations necessaires");
+                MessageBox.Show("Erreur :" + Environment.NewLine + "Connectez-vous avec des autorisations necessaires");
                 return;
             }
             uC_Main_po1.Show();
