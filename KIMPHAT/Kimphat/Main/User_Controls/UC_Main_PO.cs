@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Kimphat.Properties;
+using static Kimphat.Main.F_Add_Work;
 
 namespace Kimphat.Main.User_Controls
 {
@@ -35,19 +36,44 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message, "Erreur");
             }
             con.Close();
         }
 
         private void PCB_UC_PO_Edit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité 'AJOUTER' à venir");
+            MessageBox.Show("Fonctionnalité 'AJOUTER' à venir", "Attention");
         }
 
         private void PCB_UC_PO_Add_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité 'ÉDITER' à venir");
+            //MessageBox.Show("Fonctionnalité 'ÉDITER' à venir", "Attention");
+
+            MySqlConnection con = new(Database.Con);
+            try
+            {
+                con.Open();
+                MySqlCommand cmd = new(
+                    "SELECT ids FROM ids WHERE name = 'work'", con);
+               
+                MySqlDataReader reader;
+                reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    int newId = int.Parse(reader["ids"].ToString()) + 1;
+                    NewWork.Id = "BT-" + newId;
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message, "Erreur");
+            }
+
+            F_Add_Work f_Add_Work = new();
+            f_Add_Work.Show();
         }
 
         private void DGV_UC_PO_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -100,6 +126,8 @@ namespace Kimphat.Main.User_Controls
                 if (reader.Read())
                 {
                     PNL_UC_PO_BT.Show();
+                    PCB_UC_PO_Edit.Show();
+                    PCB_UC_PO_Print.Show();
                     string requested_date = string.Concat("Date de la demande : ", reader["requested_date"].ToString().AsSpan(0, length: reader["requested_date"].ToString().Length - 9));
                     string work_address = reader["a_name"].ToString() + Environment.NewLine + reader["a_address"].ToString() + ", " + reader["a_city"].ToString() + Environment.NewLine + reader["a_province"].ToString() + ", " + reader["a_p_code"].ToString();
                     string billing_address = reader["b_name"].ToString() + Environment.NewLine + reader["b_address"].ToString() + ", " + reader["b_city"].ToString() + Environment.NewLine + reader["b_province"].ToString() + ", " + reader["b_p_code"].ToString();
@@ -138,7 +166,7 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message, "Erreur");
             }
         }
 
@@ -170,14 +198,14 @@ namespace Kimphat.Main.User_Controls
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : " + Environment.NewLine + ex.Message);
+                MessageBox.Show("Erreur : " + Environment.NewLine + ex.Message, "Erreur");
             }
             con.Close();
         }
 
         private void PCB_UC_PO_Print_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité 'IMPRIMER' à venir");
+            MessageBox.Show("Fonctionnalité 'IMPRIMER' à venir", "Attention");
         }
     }
 }

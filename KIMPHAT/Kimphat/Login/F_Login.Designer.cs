@@ -89,7 +89,7 @@
             // 
             TXT_Username.BackColor = Color.White;
             TXT_Username.Cursor = Cursors.IBeam;
-            TXT_Username.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TXT_Username.Font = new Font("Gotham", 12F);
             TXT_Username.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_Username.Location = new Point(40, 155);
             TXT_Username.Name = "TXT_Username";
@@ -101,7 +101,7 @@
             // 
             TXT_Password.BackColor = Color.White;
             TXT_Password.Cursor = Cursors.IBeam;
-            TXT_Password.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TXT_Password.Font = new Font("Gotham", 12F);
             TXT_Password.ForeColor = Color.FromArgb(40, 40, 40);
             TXT_Password.Location = new Point(40, 234);
             TXT_Password.Name = "TXT_Password";
@@ -113,7 +113,7 @@
             // LBL_Username
             // 
             LBL_Username.AutoSize = true;
-            LBL_Username.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_Username.Font = new Font("Gotham", 12F);
             LBL_Username.Location = new Point(40, 133);
             LBL_Username.Name = "LBL_Username";
             LBL_Username.Size = new Size(86, 18);
@@ -123,7 +123,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Gotham", 12F);
             label1.Location = new Point(40, 212);
             label1.Name = "label1";
             label1.Size = new Size(113, 18);
@@ -134,7 +134,7 @@
             // 
             label2.AutoSize = true;
             label2.Cursor = Cursors.Hand;
-            label2.Font = new Font("Gotham", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Gotham", 8.25F);
             label2.Location = new Point(40, 265);
             label2.Name = "label2";
             label2.Size = new Size(122, 12);
@@ -144,7 +144,7 @@
             // 
             // BTN_Login
             // 
-            BTN_Login.Font = new Font("Gotham", 11.2499981F, FontStyle.Bold, GraphicsUnit.Point);
+            BTN_Login.Font = new Font("Gotham", 11.2499981F, FontStyle.Bold);
             BTN_Login.Location = new Point(40, 333);
             BTN_Login.Name = "BTN_Login";
             BTN_Login.Size = new Size(147, 46);
@@ -166,14 +166,14 @@
             // 
             // strip
             // 
-            strip.Font = new Font("Gotham", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            strip.Font = new Font("Gotham", 8.999999F);
             strip.Name = "strip";
             strip.Size = new Size(62, 17);
             strip.Text = "Console :";
             // 
             // LBL_F_Login_Status
             // 
-            LBL_F_Login_Status.Font = new Font("Gotham", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Login_Status.Font = new Font("Gotham", 8.999999F);
             LBL_F_Login_Status.Name = "LBL_F_Login_Status";
             LBL_F_Login_Status.Size = new Size(0, 17);
             // 
@@ -195,7 +195,7 @@
             Controls.Add(panel1);
             Controls.Add(panel4);
             ForeColor = Color.FromArgb(40, 40, 40);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "F_Login";

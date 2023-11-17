@@ -134,7 +134,7 @@
             // LBL_F_Main_PO
             // 
             LBL_F_Main_PO.Dock = DockStyle.Right;
-            LBL_F_Main_PO.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_PO.Font = new Font("Gotham", 12F);
             LBL_F_Main_PO.ForeColor = Color.White;
             LBL_F_Main_PO.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_PO.Location = new Point(64, 0);
@@ -169,7 +169,7 @@
             // label1
             // 
             label1.Dock = DockStyle.Bottom;
-            label1.Font = new Font("Gotham", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Gotham", 15.75F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(227, 15, 44);
             label1.Location = new Point(0, 364);
             label1.Name = "label1";
@@ -181,7 +181,7 @@
             // LBL_F_Main_Username
             // 
             LBL_F_Main_Username.Dock = DockStyle.Bottom;
-            LBL_F_Main_Username.Font = new Font("Gotham", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            LBL_F_Main_Username.Font = new Font("Gotham", 15.75F, FontStyle.Bold);
             LBL_F_Main_Username.ForeColor = Color.White;
             LBL_F_Main_Username.Location = new Point(0, 412);
             LBL_F_Main_Username.Name = "LBL_F_Main_Username";
@@ -193,7 +193,7 @@
             // LBL_F_Main_Level
             // 
             LBL_F_Main_Level.Dock = DockStyle.Bottom;
-            LBL_F_Main_Level.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Level.Font = new Font("Gotham", 12F);
             LBL_F_Main_Level.ForeColor = Color.White;
             LBL_F_Main_Level.Location = new Point(0, 448);
             LBL_F_Main_Level.Name = "LBL_F_Main_Level";
@@ -227,7 +227,7 @@
             // LBL_F_Main_Quit
             // 
             LBL_F_Main_Quit.Dock = DockStyle.Right;
-            LBL_F_Main_Quit.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Quit.Font = new Font("Gotham", 12F);
             LBL_F_Main_Quit.ForeColor = Color.White;
             LBL_F_Main_Quit.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Quit.Location = new Point(64, 0);
@@ -260,7 +260,7 @@
             // LBL_F_Main_Settings
             // 
             LBL_F_Main_Settings.Dock = DockStyle.Right;
-            LBL_F_Main_Settings.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Settings.Font = new Font("Gotham", 12F);
             LBL_F_Main_Settings.ForeColor = Color.White;
             LBL_F_Main_Settings.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Settings.Location = new Point(64, 0);
@@ -304,7 +304,7 @@
             // LBL_F_Main_Product
             // 
             LBL_F_Main_Product.Dock = DockStyle.Right;
-            LBL_F_Main_Product.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Product.Font = new Font("Gotham", 12F);
             LBL_F_Main_Product.ForeColor = Color.White;
             LBL_F_Main_Product.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Product.Location = new Point(64, 0);
@@ -348,7 +348,7 @@
             // LBL_F_Main_Family
             // 
             LBL_F_Main_Family.Dock = DockStyle.Right;
-            LBL_F_Main_Family.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Family.Font = new Font("Gotham", 12F);
             LBL_F_Main_Family.ForeColor = Color.White;
             LBL_F_Main_Family.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Family.Location = new Point(64, 0);
@@ -392,7 +392,7 @@
             // LBL_F_Main_Category
             // 
             LBL_F_Main_Category.Dock = DockStyle.Right;
-            LBL_F_Main_Category.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Category.Font = new Font("Gotham", 12F);
             LBL_F_Main_Category.ForeColor = Color.White;
             LBL_F_Main_Category.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Category.Location = new Point(64, 0);
@@ -436,7 +436,7 @@
             // LBL_F_Main_Buyer
             // 
             LBL_F_Main_Buyer.Dock = DockStyle.Right;
-            LBL_F_Main_Buyer.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Buyer.Font = new Font("Gotham", 12F);
             LBL_F_Main_Buyer.ForeColor = Color.White;
             LBL_F_Main_Buyer.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Buyer.Location = new Point(64, 0);
@@ -480,7 +480,7 @@
             // LBL_F_Main_Promo
             // 
             LBL_F_Main_Promo.Dock = DockStyle.Right;
-            LBL_F_Main_Promo.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            LBL_F_Main_Promo.Font = new Font("Gotham", 12F);
             LBL_F_Main_Promo.ForeColor = Color.White;
             LBL_F_Main_Promo.ImageAlign = ContentAlignment.MiddleLeft;
             LBL_F_Main_Promo.Location = new Point(64, 0);
@@ -505,7 +505,7 @@
             // panel4
             // 
             panel4.Dock = DockStyle.Top;
-            panel4.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point);
+            panel4.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             panel4.Location = new Point(0, 66);
             panel4.Name = "panel4";
             panel4.Size = new Size(266, 35);
@@ -595,7 +595,7 @@
             ControlBox = false;
             Controls.Add(PNL_UC_Container);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

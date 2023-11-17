@@ -58,24 +58,24 @@ namespace Kimphat
 
         private void LBL_F_Main_Promo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité à venir");
+            MessageBox.Show("Fonctionnalité à 'SPÉCIAUX' venir", "Attention");
         }
 
         private void LBL_F_Main_Buyer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité à venir");
+            MessageBox.Show("Fonctionnalité à 'ACHATS' venir", "Attention");
         }
 
         private void LBL_F_Main_Family_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité à venir");
+            MessageBox.Show("Fonctionnalité 'FAMILLE' à venir", "Attention");
         }
 
         private void LBL_F_Main_PO_Click(object sender, EventArgs e)
         {
             if (User.UserLevel != "4")
             {
-                MessageBox.Show("Erreur :" + Environment.NewLine + "Connectez-vous avec des autorisations necessaires");
+                MessageBox.Show("Erreur :" + Environment.NewLine + "Connectez-vous avec des autorisations necessaires", "Erreur");
                 return;
             }
             uC_Main_po1.Show();

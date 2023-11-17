@@ -122,7 +122,7 @@ namespace Kimphat
             {
                 //---
                 Update_F_Login_Bar(ex.Message, true);
-                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message);
+                MessageBox.Show("Erreur :" + Environment.NewLine + ex.Message, "Erreur");
             }
             con.Close();
         }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             label1 = new Label();
             DGV_UC_PO = new DataGridView();
             PNL_UC_PO_BT = new Panel();
@@ -114,41 +114,41 @@
             DGV_UC_PO.BorderStyle = BorderStyle.None;
             DGV_UC_PO.CellBorderStyle = DataGridViewCellBorderStyle.None;
             DGV_UC_PO.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.White;
-            dataGridViewCellStyle7.Font = new Font("Gotham", 12F);
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(40, 40, 40);
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            DGV_UC_PO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.Font = new Font("Gotham", 12F);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(40, 40, 40);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            DGV_UC_PO.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DGV_UC_PO.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.White;
-            dataGridViewCellStyle8.Font = new Font("Gotham", 12F);
-            dataGridViewCellStyle8.ForeColor = Color.FromArgb(40, 40, 40);
-            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            DGV_UC_PO.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Gotham", 12F);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(40, 40, 40);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            DGV_UC_PO.DefaultCellStyle = dataGridViewCellStyle2;
             DGV_UC_PO.GridColor = Color.White;
             DGV_UC_PO.Location = new Point(23, 65);
             DGV_UC_PO.MultiSelect = false;
             DGV_UC_PO.Name = "DGV_UC_PO";
             DGV_UC_PO.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.White;
-            dataGridViewCellStyle9.Font = new Font("Gotham", 9.749999F);
-            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            DGV_UC_PO.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Gotham", 9.749999F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            DGV_UC_PO.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             DGV_UC_PO.RowHeadersVisible = false;
             DGV_UC_PO.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             DGV_UC_PO.RowTemplate.ReadOnly = true;
             DGV_UC_PO.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DGV_UC_PO.Size = new Size(721, 913);
+            DGV_UC_PO.Size = new Size(721, 948);
             DGV_UC_PO.TabIndex = 4;
             DGV_UC_PO.CellContentDoubleClick += DGV_UC_PO_CellContentDoubleClick;
             // 
@@ -695,8 +695,8 @@
             // PCB_UC_PO_Add
             // 
             PCB_UC_PO_Add.Cursor = Cursors.Hand;
-            PCB_UC_PO_Add.Image = Properties.Resources.Edit;
-            PCB_UC_PO_Add.Location = new Point(678, 983);
+            PCB_UC_PO_Add.Image = Properties.Resources.Add1;
+            PCB_UC_PO_Add.Location = new Point(360, 30);
             PCB_UC_PO_Add.Name = "PCB_UC_PO_Add";
             PCB_UC_PO_Add.Size = new Size(30, 30);
             PCB_UC_PO_Add.SizeMode = PictureBoxSizeMode.Zoom;
@@ -707,25 +707,27 @@
             // PCB_UC_PO_Edit
             // 
             PCB_UC_PO_Edit.Cursor = Cursors.Hand;
-            PCB_UC_PO_Edit.Image = Properties.Resources.Add1;
-            PCB_UC_PO_Edit.Location = new Point(642, 983);
+            PCB_UC_PO_Edit.Image = Properties.Resources.Edit;
+            PCB_UC_PO_Edit.Location = new Point(815, 61);
             PCB_UC_PO_Edit.Name = "PCB_UC_PO_Edit";
             PCB_UC_PO_Edit.Size = new Size(30, 30);
             PCB_UC_PO_Edit.SizeMode = PictureBoxSizeMode.Zoom;
             PCB_UC_PO_Edit.TabIndex = 12;
             PCB_UC_PO_Edit.TabStop = false;
+            PCB_UC_PO_Edit.Visible = false;
             PCB_UC_PO_Edit.Click += PCB_UC_PO_Edit_Click;
             // 
             // PCB_UC_PO_Print
             // 
             PCB_UC_PO_Print.Cursor = Cursors.Hand;
             PCB_UC_PO_Print.Image = Properties.Resources.Print3;
-            PCB_UC_PO_Print.Location = new Point(714, 983);
+            PCB_UC_PO_Print.Location = new Point(815, 25);
             PCB_UC_PO_Print.Name = "PCB_UC_PO_Print";
             PCB_UC_PO_Print.Size = new Size(30, 30);
             PCB_UC_PO_Print.SizeMode = PictureBoxSizeMode.Zoom;
             PCB_UC_PO_Print.TabIndex = 13;
             PCB_UC_PO_Print.TabStop = false;
+            PCB_UC_PO_Print.Visible = false;
             PCB_UC_PO_Print.Click += PCB_UC_PO_Print_Click;
             // 
             // UC_Main_PO
