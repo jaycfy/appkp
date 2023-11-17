@@ -129,7 +129,7 @@ namespace Kimphat.Main
 
         private void BTN_F_Add_Work_Save_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fonctionnalité à 'ENREGISTRER' venir", "Attention");
+            MessageBox.Show("Fonctionnalité 'ENREGISTRER' à venir", "Attention");
         }
     }
 }

@@ -693,6 +693,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
+            pictureBox2.Visible = false;
             // 
             // PCB_UC_PO_Add
             // 

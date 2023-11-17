@@ -123,6 +123,7 @@ namespace Kimphat.Main.User_Controls
 
                 if (reader.Read())
                 {
+                    pictureBox2.Show();
                     PNL_UC_PO_BT.Show();
                     PCB_UC_PO_Edit.Show();
                     PCB_UC_PO_Print.Show();
