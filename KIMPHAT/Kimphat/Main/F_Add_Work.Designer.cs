@@ -236,6 +236,7 @@
             // CBB_F_Add_Work_Billing_Address
             // 
             CBB_F_Add_Work_Billing_Address.BackColor = Color.White;
+            CBB_F_Add_Work_Billing_Address.FlatStyle = FlatStyle.System;
             CBB_F_Add_Work_Billing_Address.Font = new Font("Gotham", 9.749999F);
             CBB_F_Add_Work_Billing_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Billing_Address.FormattingEnabled = true;
@@ -248,6 +249,7 @@
             // CBB_F_Add_Work_Work_Address
             // 
             CBB_F_Add_Work_Work_Address.BackColor = Color.White;
+            CBB_F_Add_Work_Work_Address.FlatStyle = FlatStyle.System;
             CBB_F_Add_Work_Work_Address.Font = new Font("Gotham", 9.749999F);
             CBB_F_Add_Work_Work_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Work_Address.FormattingEnabled = true;
