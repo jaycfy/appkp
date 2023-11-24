@@ -71,7 +71,7 @@
             panel2 = new Panel();
             LBL_F_Add_Work_Id = new Label();
             panel3 = new Panel();
-            dateTimePicker1 = new DateTimePicker();
+            DTP_F_Add_Work_Request_Date = new DateTimePicker();
             label1 = new Label();
             BTN_F_Add_Work_Cancel = new Button();
             BTN_F_Add_Work_Save = new Button();
@@ -236,24 +236,24 @@
             // CBB_F_Add_Work_Billing_Address
             // 
             CBB_F_Add_Work_Billing_Address.BackColor = Color.White;
-            CBB_F_Add_Work_Billing_Address.Font = new Font("Gotham", 12F);
+            CBB_F_Add_Work_Billing_Address.Font = new Font("Gotham", 9.749999F);
             CBB_F_Add_Work_Billing_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Billing_Address.FormattingEnabled = true;
             CBB_F_Add_Work_Billing_Address.Location = new Point(383, 127);
             CBB_F_Add_Work_Billing_Address.Name = "CBB_F_Add_Work_Billing_Address";
-            CBB_F_Add_Work_Billing_Address.Size = new Size(352, 26);
+            CBB_F_Add_Work_Billing_Address.Size = new Size(352, 23);
             CBB_F_Add_Work_Billing_Address.TabIndex = 4;
             CBB_F_Add_Work_Billing_Address.SelectedIndexChanged += CBB_F_Add_Work_Billing_Address_SelectedIndexChanged;
             // 
             // CBB_F_Add_Work_Work_Address
             // 
             CBB_F_Add_Work_Work_Address.BackColor = Color.White;
-            CBB_F_Add_Work_Work_Address.Font = new Font("Gotham", 12F);
+            CBB_F_Add_Work_Work_Address.Font = new Font("Gotham", 9.749999F);
             CBB_F_Add_Work_Work_Address.ForeColor = Color.FromArgb(40, 40, 40);
             CBB_F_Add_Work_Work_Address.FormattingEnabled = true;
             CBB_F_Add_Work_Work_Address.Location = new Point(25, 127);
             CBB_F_Add_Work_Work_Address.Name = "CBB_F_Add_Work_Work_Address";
-            CBB_F_Add_Work_Work_Address.Size = new Size(352, 26);
+            CBB_F_Add_Work_Work_Address.Size = new Size(352, 23);
             CBB_F_Add_Work_Work_Address.TabIndex = 3;
             CBB_F_Add_Work_Work_Address.SelectedIndexChanged += CBB_F_Add_Work_Work_Address_SelectedIndexChanged;
             // 
@@ -579,15 +579,15 @@
             panel3.Size = new Size(762, 4);
             panel3.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // DTP_F_Add_Work_Request_Date
             // 
-            dateTimePicker1.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(190, 998);
-            dateTimePicker1.MinDate = new DateTime(2001, 1, 1, 0, 0, 0, 0);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 24);
-            dateTimePicker1.TabIndex = 2;
-            dateTimePicker1.Value = new DateTime(2023, 11, 17, 0, 0, 0, 0);
+            DTP_F_Add_Work_Request_Date.Font = new Font("Gotham", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DTP_F_Add_Work_Request_Date.Location = new Point(190, 998);
+            DTP_F_Add_Work_Request_Date.MinDate = new DateTime(2001, 1, 1, 0, 0, 0, 0);
+            DTP_F_Add_Work_Request_Date.Name = "DTP_F_Add_Work_Request_Date";
+            DTP_F_Add_Work_Request_Date.Size = new Size(200, 24);
+            DTP_F_Add_Work_Request_Date.TabIndex = 2;
+            DTP_F_Add_Work_Request_Date.Value = new DateTime(2023, 11, 17, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -634,7 +634,7 @@
             Controls.Add(BTN_F_Add_Work_Cancel);
             Controls.Add(PNL_UC_PO_BT);
             Controls.Add(label1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(DTP_F_Add_Work_Request_Date);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -686,7 +686,7 @@
         private ComboBox CBB_F_Add_Work_Billing_Address;
         private ComboBox CBB_F_Add_Work_Work_Address;
         private Label label1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DTP_F_Add_Work_Request_Date;
         private TextBox textBox1;
         private TextBox textBox7;
         private TextBox textBox6;

@@ -28,19 +28,19 @@ namespace Kimphat.Main
             MySqlConnection con = new(Database.Con);
             try
             {
-                List<string> Work_Address = new();
-                List<string> Billing_Address = new();
+                List<string> Work_Address = [];
+                List<string> Billing_Address = [];
                 con.Open();
                 MySqlCommand cmd = new(
-                    "SELECT name FROM stores", con);
+                    "SELECT id, name FROM stores", con);
 
                 MySqlDataReader reader;
                 reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    Work_Address.Add(reader.GetString("name"));
-                    Billing_Address.Add(reader.GetString("name"));
+                    Work_Address.Add(reader.GetString("id") + " - " + reader.GetString("name"));
+                    Billing_Address.Add(reader.GetString("id") + " - " + reader.GetString("name"));
                 }
 
                 CBB_F_Add_Work_Work_Address.DataSource = Work_Address;
@@ -57,6 +57,7 @@ namespace Kimphat.Main
 
 
             LBL_F_Add_Work_Id.Text = NewWork.Id;
+            DTP_F_Add_Work_Request_Date.Value = DateTime.Now;
         }
 
         private void BTN_F_Add_Work_Cancel_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace Kimphat.Main
         private void CBB_F_Add_Work_Work_Address_SelectedIndexChanged(object sender, EventArgs e)
         {
             string Work_Address_Name = CBB_F_Add_Work_Work_Address.Text;
+            string Work_Address_Id = Work_Address_Name[..Math.Min(Work_Address_Name.Length, 6)];
             if (CBB_F_Add_Work_Work_Address.Text == string.Empty) { return; }
 
             MySqlConnection con = new(Database.Con);
@@ -77,9 +79,9 @@ namespace Kimphat.Main
                 con.Open();
                 MySqlCommand cmd = new(
                     "SELECT " +
-                    "address, city, province, p_code " +
+                    "name, address, city, province, p_code " +
                     "FROM stores " +
-                    "WHERE name = '" + Work_Address_Name + "'", con);
+                    "WHERE id = '" + Work_Address_Id + "'", con);
 
                 MySqlDataReader reader;
                 reader = cmd.ExecuteReader();
@@ -99,6 +101,8 @@ namespace Kimphat.Main
         private void CBB_F_Add_Work_Billing_Address_SelectedIndexChanged(object sender, EventArgs e)
         {
             string Billing_Address_Name = CBB_F_Add_Work_Billing_Address.Text;
+            string Billing_Address_Id = Billing_Address_Name[..Math.Min(Billing_Address_Name.Length, 6)];
+            
             if (CBB_F_Add_Work_Billing_Address.Text == string.Empty) { return; }
 
             MySqlConnection con = new(Database.Con);
@@ -108,9 +112,9 @@ namespace Kimphat.Main
                 con.Open();
                 MySqlCommand cmd = new(
                     "SELECT " +
-                    "address, city, province, p_code " +
+                    "name, address, city, province, p_code " +
                     "FROM stores " +
-                    "WHERE name = '" + Billing_Address_Name + "'", con);
+                    "WHERE id = '" + Billing_Address_Id + "'", con);
 
                 MySqlDataReader reader;
                 reader = cmd.ExecuteReader();
