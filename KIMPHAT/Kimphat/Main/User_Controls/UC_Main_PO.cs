@@ -60,8 +60,8 @@ namespace Kimphat.Main.User_Controls
 
                 if (reader.Read())
                 {
-                    int newId = int.Parse(reader["ids"].ToString()) + 1;
-                    NewWork.Id = "BT-" + newId;
+                    int newId = int.Parse(reader["ids"].ToString());
+                    NewWork.Id = newId;
                 }
                 con.Close();
             }
@@ -109,6 +109,7 @@ namespace Kimphat.Main.User_Controls
                     "work.work, " +
                     "work.submission_price, " +
                     "work.additional_price, " +
+                    "work.additional_reason, " +
                     "work.ho_followup, " +
                     "work.created_by, " +
                     "work.approved_by " +
@@ -140,6 +141,7 @@ namespace Kimphat.Main.User_Controls
                     string work = reader["work"].ToString();
                     double submission = double.Parse(reader["submission_price"].ToString());
                     double additional = double.Parse(reader["additional_price"].ToString());
+                    string reason = reader["additional_reason"].ToString();
                     string ho_followup = reader["ho_followup"].ToString();
                     string created_by = reader["created_by"].ToString();
                     string approved_by = reader["approved_by"].ToString();
@@ -157,7 +159,14 @@ namespace Kimphat.Main.User_Controls
                     LBL_UC_PO_E_Email.Text = e_email;
                     TXT_UC_PO_Work.Text = work;
                     LBL_UC_PO_Submission.Text = "$" + submission.ToString();
-                    LBL_UC_PO_Additional.Text = "$" + additional.ToString();
+                    if (reader["additional_reason"].ToString() != string.Empty)
+                    {
+                        LBL_UC_PO_Additional.Text = "$" + additional.ToString() + " (" + reason + ")";
+                    }
+                    else
+                    {
+                        LBL_UC_PO_Additional.Text = "$" + additional.ToString();
+                    }
                     TXT_UC_PO_Follow_Up.Text = ho_followup;
                     LBL_UC_PO_Created_By.Text = created_by;
                     LBL_UC_PO_Approved_By.Text = approved_by;

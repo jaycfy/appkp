@@ -30,18 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Add_Work));
             PNL_UC_PO_BT = new Panel();
+            TXT_F_Add_Work_Reason = new TextBox();
+            label4 = new Label();
             LBL_F_Add_Work_Billing_Address = new Label();
             LBL_F_Add_Work_Work_Address = new Label();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            TXT_F_Add_Work_Approuved_By = new TextBox();
+            TXT_F_Add_Work_Additional = new TextBox();
+            TXT_F_Add_Work_Submission = new TextBox();
+            TXT_F_Add_Work_E_Email = new TextBox();
+            TXT_F_Add_Work_E_Number = new TextBox();
+            TXT_F_Add_Work_E_Contact = new TextBox();
+            TXT_F_Add_Work_E_Company = new TextBox();
+            TXT_F_Add_Work_S_Email = new TextBox();
+            TXT_F_Add_Work_S_Number = new TextBox();
+            TXT_F_Add_Work_S_Contact = new TextBox();
             CBB_F_Add_Work_Billing_Address = new ComboBox();
             CBB_F_Add_Work_Work_Address = new ComboBox();
             LBL_UC_PO_Created_By = new Label();
@@ -50,10 +52,10 @@
             label25 = new Label();
             label26 = new Label();
             panel7 = new Panel();
-            TXT_UC_PO_Follow_Up = new TextBox();
+            TXT_F_Add_Work_Follow_Up = new TextBox();
             label24 = new Label();
             panel6 = new Panel();
-            TXT_UC_PO_Work = new TextBox();
+            TXT_F_Add_Work_Work = new TextBox();
             label21 = new Label();
             label20 = new Label();
             label16 = new Label();
@@ -84,18 +86,20 @@
             // PNL_UC_PO_BT
             // 
             PNL_UC_PO_BT.BorderStyle = BorderStyle.FixedSingle;
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_Reason);
+            PNL_UC_PO_BT.Controls.Add(label4);
             PNL_UC_PO_BT.Controls.Add(LBL_F_Add_Work_Billing_Address);
             PNL_UC_PO_BT.Controls.Add(LBL_F_Add_Work_Work_Address);
-            PNL_UC_PO_BT.Controls.Add(textBox10);
-            PNL_UC_PO_BT.Controls.Add(textBox9);
-            PNL_UC_PO_BT.Controls.Add(textBox8);
-            PNL_UC_PO_BT.Controls.Add(textBox7);
-            PNL_UC_PO_BT.Controls.Add(textBox6);
-            PNL_UC_PO_BT.Controls.Add(textBox5);
-            PNL_UC_PO_BT.Controls.Add(textBox4);
-            PNL_UC_PO_BT.Controls.Add(textBox3);
-            PNL_UC_PO_BT.Controls.Add(textBox2);
-            PNL_UC_PO_BT.Controls.Add(textBox1);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_Approuved_By);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_Additional);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_Submission);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_E_Email);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_E_Number);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_E_Contact);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_E_Company);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_S_Email);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_S_Number);
+            PNL_UC_PO_BT.Controls.Add(TXT_F_Add_Work_S_Contact);
             PNL_UC_PO_BT.Controls.Add(CBB_F_Add_Work_Billing_Address);
             PNL_UC_PO_BT.Controls.Add(CBB_F_Add_Work_Work_Address);
             PNL_UC_PO_BT.Controls.Add(LBL_UC_PO_Created_By);
@@ -123,6 +127,27 @@
             PNL_UC_PO_BT.Size = new Size(764, 989);
             PNL_UC_PO_BT.TabIndex = 7;
             // 
+            // TXT_F_Add_Work_Reason
+            // 
+            TXT_F_Add_Work_Reason.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_Reason.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Reason.Location = new Point(233, 657);
+            TXT_F_Add_Work_Reason.Name = "TXT_F_Add_Work_Reason";
+            TXT_F_Add_Work_Reason.Size = new Size(504, 24);
+            TXT_F_Add_Work_Reason.TabIndex = 53;
+            // 
+            // label4
+            // 
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(40, 40, 40);
+            label4.Location = new Point(26, 658);
+            label4.Name = "label4";
+            label4.Size = new Size(207, 23);
+            label4.TabIndex = 52;
+            label4.Text = "Justification :";
+            label4.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // LBL_F_Add_Work_Billing_Address
             // 
             LBL_F_Add_Work_Billing_Address.BackColor = Color.Transparent;
@@ -143,95 +168,95 @@
             LBL_F_Add_Work_Work_Address.Size = new Size(352, 70);
             LBL_F_Add_Work_Work_Address.TabIndex = 50;
             // 
-            // textBox10
+            // TXT_F_Add_Work_Approuved_By
             // 
-            textBox10.Font = new Font("Gotham", 12F);
-            textBox10.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox10.Location = new Point(182, 942);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(555, 24);
-            textBox10.TabIndex = 16;
+            TXT_F_Add_Work_Approuved_By.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_Approuved_By.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Approuved_By.Location = new Point(182, 942);
+            TXT_F_Add_Work_Approuved_By.Name = "TXT_F_Add_Work_Approuved_By";
+            TXT_F_Add_Work_Approuved_By.Size = new Size(555, 24);
+            TXT_F_Add_Work_Approuved_By.TabIndex = 16;
             // 
-            // textBox9
+            // TXT_F_Add_Work_Additional
             // 
-            textBox9.Font = new Font("Gotham", 12F);
-            textBox9.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox9.Location = new Point(233, 639);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(504, 24);
-            textBox9.TabIndex = 14;
+            TXT_F_Add_Work_Additional.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_Additional.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Additional.Location = new Point(233, 635);
+            TXT_F_Add_Work_Additional.Name = "TXT_F_Add_Work_Additional";
+            TXT_F_Add_Work_Additional.Size = new Size(504, 24);
+            TXT_F_Add_Work_Additional.TabIndex = 14;
             // 
-            // textBox8
+            // TXT_F_Add_Work_Submission
             // 
-            textBox8.Font = new Font("Gotham", 12F);
-            textBox8.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox8.Location = new Point(233, 616);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(504, 24);
-            textBox8.TabIndex = 13;
+            TXT_F_Add_Work_Submission.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_Submission.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Submission.Location = new Point(233, 612);
+            TXT_F_Add_Work_Submission.Name = "TXT_F_Add_Work_Submission";
+            TXT_F_Add_Work_Submission.Size = new Size(504, 24);
+            TXT_F_Add_Work_Submission.TabIndex = 13;
             // 
-            // textBox7
+            // TXT_F_Add_Work_E_Email
             // 
-            textBox7.Font = new Font("Gotham", 12F);
-            textBox7.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox7.Location = new Point(233, 385);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(504, 24);
-            textBox7.TabIndex = 11;
+            TXT_F_Add_Work_E_Email.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_E_Email.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_E_Email.Location = new Point(233, 385);
+            TXT_F_Add_Work_E_Email.Name = "TXT_F_Add_Work_E_Email";
+            TXT_F_Add_Work_E_Email.Size = new Size(504, 24);
+            TXT_F_Add_Work_E_Email.TabIndex = 11;
             // 
-            // textBox6
+            // TXT_F_Add_Work_E_Number
             // 
-            textBox6.Font = new Font("Gotham", 12F);
-            textBox6.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox6.Location = new Point(233, 362);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(504, 24);
-            textBox6.TabIndex = 10;
+            TXT_F_Add_Work_E_Number.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_E_Number.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_E_Number.Location = new Point(233, 362);
+            TXT_F_Add_Work_E_Number.Name = "TXT_F_Add_Work_E_Number";
+            TXT_F_Add_Work_E_Number.Size = new Size(504, 24);
+            TXT_F_Add_Work_E_Number.TabIndex = 10;
             // 
-            // textBox5
+            // TXT_F_Add_Work_E_Contact
             // 
-            textBox5.Font = new Font("Gotham", 12F);
-            textBox5.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox5.Location = new Point(233, 339);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(504, 24);
-            textBox5.TabIndex = 9;
+            TXT_F_Add_Work_E_Contact.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_E_Contact.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_E_Contact.Location = new Point(233, 339);
+            TXT_F_Add_Work_E_Contact.Name = "TXT_F_Add_Work_E_Contact";
+            TXT_F_Add_Work_E_Contact.Size = new Size(504, 24);
+            TXT_F_Add_Work_E_Contact.TabIndex = 9;
             // 
-            // textBox4
+            // TXT_F_Add_Work_E_Company
             // 
-            textBox4.Font = new Font("Gotham", 12F);
-            textBox4.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox4.Location = new Point(233, 316);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(504, 24);
-            textBox4.TabIndex = 8;
+            TXT_F_Add_Work_E_Company.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_E_Company.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_E_Company.Location = new Point(233, 316);
+            TXT_F_Add_Work_E_Company.Name = "TXT_F_Add_Work_E_Company";
+            TXT_F_Add_Work_E_Company.Size = new Size(504, 24);
+            TXT_F_Add_Work_E_Company.TabIndex = 8;
             // 
-            // textBox3
+            // TXT_F_Add_Work_S_Email
             // 
-            textBox3.Font = new Font("Gotham", 12F);
-            textBox3.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox3.Location = new Point(233, 272);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(504, 24);
-            textBox3.TabIndex = 7;
+            TXT_F_Add_Work_S_Email.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_S_Email.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_S_Email.Location = new Point(233, 272);
+            TXT_F_Add_Work_S_Email.Name = "TXT_F_Add_Work_S_Email";
+            TXT_F_Add_Work_S_Email.Size = new Size(504, 24);
+            TXT_F_Add_Work_S_Email.TabIndex = 7;
             // 
-            // textBox2
+            // TXT_F_Add_Work_S_Number
             // 
-            textBox2.Font = new Font("Gotham", 12F);
-            textBox2.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox2.Location = new Point(233, 249);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(504, 24);
-            textBox2.TabIndex = 6;
+            TXT_F_Add_Work_S_Number.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_S_Number.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_S_Number.Location = new Point(233, 249);
+            TXT_F_Add_Work_S_Number.Name = "TXT_F_Add_Work_S_Number";
+            TXT_F_Add_Work_S_Number.Size = new Size(504, 24);
+            TXT_F_Add_Work_S_Number.TabIndex = 6;
             // 
-            // textBox1
+            // TXT_F_Add_Work_S_Contact
             // 
-            textBox1.Font = new Font("Gotham", 12F);
-            textBox1.ForeColor = Color.FromArgb(40, 40, 40);
-            textBox1.Location = new Point(233, 226);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(504, 24);
-            textBox1.TabIndex = 5;
+            TXT_F_Add_Work_S_Contact.Font = new Font("Gotham", 12F);
+            TXT_F_Add_Work_S_Contact.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_S_Contact.Location = new Point(233, 226);
+            TXT_F_Add_Work_S_Contact.Name = "TXT_F_Add_Work_S_Contact";
+            TXT_F_Add_Work_S_Contact.Size = new Size(504, 24);
+            TXT_F_Add_Work_S_Contact.TabIndex = 5;
             // 
             // CBB_F_Add_Work_Billing_Address
             // 
@@ -299,7 +324,7 @@
             label25.BackColor = Color.Transparent;
             label25.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label25.ForeColor = Color.FromArgb(40, 40, 40);
-            label25.Location = new Point(26, 639);
+            label25.Location = new Point(26, 635);
             label25.Name = "label25";
             label25.Size = new Size(207, 23);
             label25.TabIndex = 43;
@@ -311,7 +336,7 @@
             label26.BackColor = Color.Transparent;
             label26.Font = new Font("Gotham", 11.9999981F, FontStyle.Bold);
             label26.ForeColor = Color.FromArgb(40, 40, 40);
-            label26.Location = new Point(26, 616);
+            label26.Location = new Point(26, 612);
             label26.Name = "label26";
             label26.Size = new Size(207, 23);
             label26.TabIndex = 42;
@@ -321,27 +346,27 @@
             // panel7
             // 
             panel7.BorderStyle = BorderStyle.FixedSingle;
-            panel7.Controls.Add(TXT_UC_PO_Follow_Up);
+            panel7.Controls.Add(TXT_F_Add_Work_Follow_Up);
             panel7.Controls.Add(label24);
-            panel7.Location = new Point(27, 685);
+            panel7.Location = new Point(27, 684);
             panel7.Name = "panel7";
             panel7.Size = new Size(710, 198);
             panel7.TabIndex = 41;
             // 
-            // TXT_UC_PO_Follow_Up
+            // TXT_F_Add_Work_Follow_Up
             // 
-            TXT_UC_PO_Follow_Up.AcceptsReturn = true;
-            TXT_UC_PO_Follow_Up.BackColor = Color.White;
-            TXT_UC_PO_Follow_Up.BorderStyle = BorderStyle.None;
-            TXT_UC_PO_Follow_Up.Cursor = Cursors.IBeam;
-            TXT_UC_PO_Follow_Up.Dock = DockStyle.Fill;
-            TXT_UC_PO_Follow_Up.Font = new Font("Gotham", 11.25F);
-            TXT_UC_PO_Follow_Up.ForeColor = Color.FromArgb(40, 40, 40);
-            TXT_UC_PO_Follow_Up.Location = new Point(0, 23);
-            TXT_UC_PO_Follow_Up.Multiline = true;
-            TXT_UC_PO_Follow_Up.Name = "TXT_UC_PO_Follow_Up";
-            TXT_UC_PO_Follow_Up.Size = new Size(708, 173);
-            TXT_UC_PO_Follow_Up.TabIndex = 15;
+            TXT_F_Add_Work_Follow_Up.AcceptsReturn = true;
+            TXT_F_Add_Work_Follow_Up.BackColor = Color.White;
+            TXT_F_Add_Work_Follow_Up.BorderStyle = BorderStyle.None;
+            TXT_F_Add_Work_Follow_Up.Cursor = Cursors.IBeam;
+            TXT_F_Add_Work_Follow_Up.Dock = DockStyle.Fill;
+            TXT_F_Add_Work_Follow_Up.Font = new Font("Gotham", 11.25F);
+            TXT_F_Add_Work_Follow_Up.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Follow_Up.Location = new Point(0, 23);
+            TXT_F_Add_Work_Follow_Up.Multiline = true;
+            TXT_F_Add_Work_Follow_Up.Name = "TXT_F_Add_Work_Follow_Up";
+            TXT_F_Add_Work_Follow_Up.Size = new Size(708, 173);
+            TXT_F_Add_Work_Follow_Up.TabIndex = 15;
             // 
             // label24
             // 
@@ -359,27 +384,27 @@
             // panel6
             // 
             panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Controls.Add(TXT_UC_PO_Work);
+            panel6.Controls.Add(TXT_F_Add_Work_Work);
             panel6.Controls.Add(label21);
             panel6.Location = new Point(26, 411);
             panel6.Name = "panel6";
             panel6.Size = new Size(710, 198);
             panel6.TabIndex = 39;
             // 
-            // TXT_UC_PO_Work
+            // TXT_F_Add_Work_Work
             // 
-            TXT_UC_PO_Work.AcceptsReturn = true;
-            TXT_UC_PO_Work.BackColor = Color.White;
-            TXT_UC_PO_Work.BorderStyle = BorderStyle.None;
-            TXT_UC_PO_Work.Cursor = Cursors.IBeam;
-            TXT_UC_PO_Work.Dock = DockStyle.Fill;
-            TXT_UC_PO_Work.Font = new Font("Gotham", 11.25F);
-            TXT_UC_PO_Work.ForeColor = Color.FromArgb(40, 40, 40);
-            TXT_UC_PO_Work.Location = new Point(0, 23);
-            TXT_UC_PO_Work.Multiline = true;
-            TXT_UC_PO_Work.Name = "TXT_UC_PO_Work";
-            TXT_UC_PO_Work.Size = new Size(708, 173);
-            TXT_UC_PO_Work.TabIndex = 12;
+            TXT_F_Add_Work_Work.AcceptsReturn = true;
+            TXT_F_Add_Work_Work.BackColor = Color.White;
+            TXT_F_Add_Work_Work.BorderStyle = BorderStyle.None;
+            TXT_F_Add_Work_Work.Cursor = Cursors.IBeam;
+            TXT_F_Add_Work_Work.Dock = DockStyle.Fill;
+            TXT_F_Add_Work_Work.Font = new Font("Gotham", 11.25F);
+            TXT_F_Add_Work_Work.ForeColor = Color.FromArgb(40, 40, 40);
+            TXT_F_Add_Work_Work.Location = new Point(0, 23);
+            TXT_F_Add_Work_Work.Multiline = true;
+            TXT_F_Add_Work_Work.Name = "TXT_F_Add_Work_Work";
+            TXT_F_Add_Work_Work.Size = new Size(708, 173);
+            TXT_F_Add_Work_Work.TabIndex = 12;
             // 
             // label21
             // 
@@ -587,7 +612,7 @@
             DTP_F_Add_Work_Request_Date.Location = new Point(190, 998);
             DTP_F_Add_Work_Request_Date.MinDate = new DateTime(2001, 1, 1, 0, 0, 0, 0);
             DTP_F_Add_Work_Request_Date.Name = "DTP_F_Add_Work_Request_Date";
-            DTP_F_Add_Work_Request_Date.Size = new Size(200, 24);
+            DTP_F_Add_Work_Request_Date.Size = new Size(207, 24);
             DTP_F_Add_Work_Request_Date.TabIndex = 2;
             DTP_F_Add_Work_Request_Date.Value = new DateTime(2023, 11, 17, 0, 0, 0, 0);
             // 
@@ -662,10 +687,10 @@
         private Label label25;
         private Label label26;
         private Panel panel7;
-        private TextBox TXT_UC_PO_Follow_Up;
+        private TextBox TXT_F_Add_Work_Follow_Up;
         private Label label24;
         private Panel panel6;
-        private TextBox TXT_UC_PO_Work;
+        private TextBox TXT_F_Add_Work_Work;
         private Label label21;
         private Label label20;
         private Label label16;
@@ -689,18 +714,20 @@
         private ComboBox CBB_F_Add_Work_Work_Address;
         private Label label1;
         private DateTimePicker DTP_F_Add_Work_Request_Date;
-        private TextBox textBox1;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
+        private TextBox TXT_F_Add_Work_S_Contact;
+        private TextBox TXT_F_Add_Work_E_Email;
+        private TextBox TXT_F_Add_Work_E_Number;
+        private TextBox TXT_F_Add_Work_E_Contact;
+        private TextBox TXT_F_Add_Work_E_Company;
+        private TextBox TXT_F_Add_Work_S_Email;
+        private TextBox TXT_F_Add_Work_S_Number;
+        private TextBox TXT_F_Add_Work_Approuved_By;
+        private TextBox TXT_F_Add_Work_Additional;
+        private TextBox TXT_F_Add_Work_Submission;
         private Label LBL_UC_PO_Created_By;
         private Label LBL_F_Add_Work_Billing_Address;
         private Label LBL_F_Add_Work_Work_Address;
+        private TextBox TXT_F_Add_Work_Reason;
+        private Label label4;
     }
 }
